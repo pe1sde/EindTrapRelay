@@ -1,14 +1,16 @@
-
-
-
-
 <?php
 $page = $_SERVER['PHP_SELF'];
-$sec = "5";
+
 ?>
 <html>
     <head>
     <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
+    <style>
+        body{
+            background-image: url("background.jpg");
+            background
+        }
+    </style>
     </head>
     <body>
     <?php
@@ -129,7 +131,7 @@ if(isset($_GET['status3'])){
 print "<br><br>";
 
 	
-print "</b><font size = 8 color = black><b>Oscar 100 transverter en eindtrap : </font>  ";
+print "</b><font size = 8 color = black><b>Oscar 100 eindtrap : </font>  ";
 if($currentStatus1 == "1") print "<font size = 8 color = red><b>uitgeschakeld</b></font>";
 else print "<font size = 8 color = green><b>ingeschakeld</b></font>";
 
@@ -144,21 +146,21 @@ else print "<a href = 'relay-control.php?status1=1'><font size = 8 color = red><
 print "<br><br><br><br>";
 
 	
-print "</b><font size = 8 color = black><b>LNB orientatie : </font>  ";
+print "</b><font size = 8 color = black><b>standbij : </font>  ";
 if($currentStatus2 == "1") print "<font size = 8 color = red><b>Horizontaal</b></font>";
 else print "<font size = 8 color = green><b>Vertikaal</b></font>";
 
 
-print "<br> <font size = 8 color = black><b>Klik hier Narrow band / Wide Band : </font>";
-if($currentStatus2 == "1") print "<a href ='relay-control.php?status2=0'><font size = 8 color = green><b>Vertikaal</b></font></a>";
-else print "<a href = 'relay-control.php?status2=1'><font size = 8 color = red><b>Horizontaal</b></font></a>";
+print "<br> <font size = 8 color = black><b>Klik hier licht in kast : </font>";
+if($currentStatus2 == "1") print "<a href ='relay-control.php?status2=0'><font size = 8 color = green><b>aan</b></font></a>";
+else print "<a href = 'relay-control.php?status2=1'><font size = 8 color = red><b>uit</b></font></a>";
 
 //relais 3
 
 print "<br><br><br><br>";
 
 	
-print "</b><font size = 8 color = black><b>Relais 3, power : </font>  ";
+print "</b><font size = 8 color = black><b>Relais 3, licht buiten : </font>  ";
 if($currentStatus3 == "1") print "<font size = 8 color = red><b>Relais 3 OFF</b></font>";
 else print "<font size = 8 color = green><b>Relais 3 ON</b></font>";
 
@@ -177,4 +179,3 @@ print "<br><br><br><br>";
 
 
 ?>
-
