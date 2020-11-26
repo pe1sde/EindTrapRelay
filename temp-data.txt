@@ -1,0 +1,11 @@
+<font size = 8 color = blue>
+21:56:25
+<font size = 8 color = black>
+22.8
+<font size = 8 color = black>
+21.3
+<font size = 8 color = black>
+20.1
+<font size = 8 color = black>
+22.8
+

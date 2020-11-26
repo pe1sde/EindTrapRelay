@@ -1,0 +1,12 @@
+[Unit]
+Description=temeratuur inlezen van een DS18B20 sensor
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/temp.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
+
