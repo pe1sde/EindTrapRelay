@@ -3,9 +3,11 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$sec = 5;
-$page = '/';
 $page = $_SERVER['PHP_SELF'];
+
+$sec = 3
+$page = "index.php"
+
 ?>
 <html>
     <head>
@@ -13,10 +15,8 @@ $page = $_SERVER['PHP_SELF'];
     <style>
         body{
             background-image: url("background.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-	}
+            background
+        }
     </style>
     </head>
     <body>
